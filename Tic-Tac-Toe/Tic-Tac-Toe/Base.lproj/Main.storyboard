@@ -16,24 +16,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❌⭕️ Tic-Tac-Toe ⭕️❌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bls-b7-5cj">
-                                <rect key="frame" x="20" y="94" width="374" height="29"/>
+                                <rect key="frame" x="20" y="144" width="374" height="29"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-tG-ZnX">
+                                <rect key="frame" x="53.5" y="421" width="307" height="54"/>
+                                <color key="backgroundColor" red="0.95464247469999997" green="0.05252625793" blue="0.042956039309999999" alpha="0.39651188380281688" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="  Play with computer🧑⚔️🤖  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-ny-kuo">
+                                <rect key="frame" x="72.5" y="525" width="269" height="54"/>
+                                <color key="backgroundColor" red="0.99842423199999997" green="0.6042280793" blue="0.60391771790000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="  Play with friend🧑⚔️👩  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bls-b7-5cj" secondAttribute="trailing" constant="20" id="6jg-oE-0HL"/>
-                            <constraint firstItem="bls-b7-5cj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Buy-xS-Mlf"/>
+                            <constraint firstItem="bls-b7-5cj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Buy-xS-Mlf"/>
+                            <constraint firstItem="zzg-tG-ZnX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RvP-UL-vMK"/>
                             <constraint firstItem="bls-b7-5cj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vgi-OX-eZK"/>
+                            <constraint firstItem="zzg-tG-ZnX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ayq-ld-zbM"/>
+                            <constraint firstItem="FJI-ny-kuo" firstAttribute="top" secondItem="zzg-tG-ZnX" secondAttribute="bottom" constant="50" id="cCm-MH-Ah9"/>
+                            <constraint firstItem="FJI-ny-kuo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iVe-Yd-rH6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonPlayWithComputer" destination="zzg-tG-ZnX" id="9ei-rc-far"/>
+                        <outlet property="buttonPlayWithFriend" destination="FJI-ny-kuo" id="GNY-zY-L78"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="113"/>
+            <point key="canvasLocation" x="-60.869565217391312" y="111.83035714285714"/>
         </scene>
     </scenes>
 </document>

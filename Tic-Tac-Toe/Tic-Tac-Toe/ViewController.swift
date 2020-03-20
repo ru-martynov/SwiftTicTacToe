@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+// Publish storybord elements
+@IBOutlet weak var buttonPlayWithComputer: UIButton! // First button (Play with Computer)
+    
+@IBOutlet weak var buttonPlayWithFriend: UIButton! // Second button (Play with Friend)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        buttonPlayWithComputer.layer.cornerRadius = 10 // rounding button Play with Computer
+        buttonPlayWithFriend.layer.cornerRadius = 10 // rounding button Play with Computer
     }
-
+    
 
 }
 
