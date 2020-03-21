@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187E774E242621D1007F4105 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E774D242621D1007F4105 /* GameViewController.swift */; };
 		18AEB67C2424F5D900ACCE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEB67B2424F5D900ACCE1F /* AppDelegate.swift */; };
 		18AEB67E2424F5D900ACCE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEB67D2424F5D900ACCE1F /* SceneDelegate.swift */; };
 		18AEB6802424F5D900ACCE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEB67F2424F5D900ACCE1F /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187E774D242621D1007F4105 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		18AEB6782424F5D900ACCE1F /* Tic-Tac-Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-Tac-Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEB67B2424F5D900ACCE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AEB67D2424F5D900ACCE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				18AEB67B2424F5D900ACCE1F /* AppDelegate.swift */,
 				18AEB67D2424F5D900ACCE1F /* SceneDelegate.swift */,
 				18AEB67F2424F5D900ACCE1F /* ViewController.swift */,
+				187E774D242621D1007F4105 /* GameViewController.swift */,
 				18AEB6812424F5D900ACCE1F /* Main.storyboard */,
 				18AEB6872424F5DC00ACCE1F /* Assets.xcassets */,
 				18AEB6892424F5DC00ACCE1F /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187E774E242621D1007F4105 /* GameViewController.swift in Sources */,
 				18AEB6802424F5D900ACCE1F /* ViewController.swift in Sources */,
 				18AEB67C2424F5D900ACCE1F /* AppDelegate.swift in Sources */,
 				18AEB6862424F5D900ACCE1F /* Tic_Tac_Toe.xcdatamodeld in Sources */,
