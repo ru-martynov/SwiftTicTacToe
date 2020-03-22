@@ -78,7 +78,7 @@
                                 <rect key="frame" x="0.0" y="214" width="414" height="414"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="SCN-Am-9p5">
-                                        <rect key="frame" x="30" y="25" width="354" height="384.00000000000011"/>
+                                        <rect key="frame" x="38" y="31" width="336" height="371"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-SE-VED">
                                         <rect key="frame" x="20" y="20" width="374" height="394"/>
@@ -172,15 +172,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="SCN-Am-9p5" secondAttribute="trailing" constant="30" id="19Q-tp-6HP"/>
+                                    <constraint firstAttribute="trailing" secondItem="SCN-Am-9p5" secondAttribute="trailing" constant="40" id="19Q-tp-6HP"/>
                                     <constraint firstItem="MTH-SE-VED" firstAttribute="leading" secondItem="mJ2-tr-l5s" secondAttribute="leading" constant="20" symbolic="YES" id="1o8-2h-357"/>
                                     <constraint firstAttribute="width" secondItem="mJ2-tr-l5s" secondAttribute="height" multiplier="1:1" id="2d3-8z-v8n"/>
                                     <constraint firstAttribute="trailing" secondItem="MTH-SE-VED" secondAttribute="trailing" constant="20" symbolic="YES" id="CyT-XK-zfI"/>
-                                    <constraint firstItem="SCN-Am-9p5" firstAttribute="leading" secondItem="mJ2-tr-l5s" secondAttribute="leading" constant="30" id="DwQ-nr-Zla"/>
+                                    <constraint firstItem="SCN-Am-9p5" firstAttribute="leading" secondItem="mJ2-tr-l5s" secondAttribute="leading" constant="38" id="DwQ-nr-Zla"/>
                                     <constraint firstItem="MTH-SE-VED" firstAttribute="top" secondItem="mJ2-tr-l5s" secondAttribute="top" constant="20" symbolic="YES" id="NM2-Co-G6q"/>
                                     <constraint firstAttribute="bottom" secondItem="MTH-SE-VED" secondAttribute="bottom" id="RmT-e8-Ha8"/>
-                                    <constraint firstItem="SCN-Am-9p5" firstAttribute="top" secondItem="mJ2-tr-l5s" secondAttribute="top" constant="25" id="VRk-R5-5HX"/>
-                                    <constraint firstAttribute="bottom" secondItem="SCN-Am-9p5" secondAttribute="bottom" constant="5" id="gW6-hx-AL9"/>
+                                    <constraint firstItem="SCN-Am-9p5" firstAttribute="top" secondItem="mJ2-tr-l5s" secondAttribute="top" constant="31" id="VRk-R5-5HX"/>
+                                    <constraint firstAttribute="bottom" secondItem="SCN-Am-9p5" secondAttribute="bottom" constant="12" id="gW6-hx-AL9"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You play with Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPM-yW-y62">
@@ -202,23 +202,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDJ-gz-bOq">
-                                <rect key="frame" x="149" y="116" width="117" height="29"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                <rect key="frame" x="149" y="116" width="117" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fight!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-w5-Aq6">
+                                <rect key="frame" x="172" y="740" width="70" height="28"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SJ-qR-JH2">
+                                <rect key="frame" x="156.5" y="696" width="101" height="36"/>
+                                <color key="backgroundColor" red="0.0095373671501874924" green="0.9786263108253479" blue="0.41577351093292236" alpha="0.3025968309859155" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="  Restart  ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="RestartButton:" destination="Acq-u0-A9e" eventType="touchUpInside" id="5au-Gs-XUz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="lPM-yW-y62" firstAttribute="top" secondItem="xam-XT-RUG" secondAttribute="top" constant="50" id="8If-FO-riZ"/>
                             <constraint firstItem="mJ2-tr-l5s" firstAttribute="leading" secondItem="xam-XT-RUG" secondAttribute="leading" id="EoI-1g-4BB"/>
                             <constraint firstItem="mJ2-tr-l5s" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="IGK-J2-Hdu"/>
+                            <constraint firstItem="5SJ-qR-JH2" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="JXW-ry-5vn"/>
                             <constraint firstItem="mJ2-tr-l5s" firstAttribute="centerY" secondItem="ri9-L0-SFP" secondAttribute="centerY" id="Roa-y5-Zrp"/>
+                            <constraint firstItem="Xfv-w5-Aq6" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="Tz9-Cw-cS1"/>
+                            <constraint firstItem="xam-XT-RUG" firstAttribute="bottom" secondItem="Xfv-w5-Aq6" secondAttribute="bottom" constant="40" id="YJk-PU-EBG"/>
                             <constraint firstItem="xam-XT-RUG" firstAttribute="trailing" secondItem="mJ2-tr-l5s" secondAttribute="trailing" id="Zgk-p6-n1C"/>
                             <constraint firstItem="xam-XT-RUG" firstAttribute="trailing" secondItem="Kw7-64-oHE" secondAttribute="trailing" constant="20" id="bii-pA-FtA"/>
                             <constraint firstItem="3xJ-o1-uu1" firstAttribute="top" secondItem="lPM-yW-y62" secondAttribute="bottom" constant="10" id="g7u-Hx-rd8"/>
                             <constraint firstItem="3xJ-o1-uu1" firstAttribute="leading" secondItem="xam-XT-RUG" secondAttribute="leading" constant="20" id="gPG-mQ-AWy"/>
                             <constraint firstItem="lPM-yW-y62" firstAttribute="leading" secondItem="xam-XT-RUG" secondAttribute="leading" constant="20" id="lg8-RT-znx"/>
+                            <constraint firstItem="Xfv-w5-Aq6" firstAttribute="top" secondItem="5SJ-qR-JH2" secondAttribute="bottom" constant="8" id="ntf-rj-Gxx"/>
                             <constraint firstItem="Kw7-64-oHE" firstAttribute="top" secondItem="lPM-yW-y62" secondAttribute="bottom" constant="10" id="pwd-3a-Nsh"/>
                             <constraint firstItem="xam-XT-RUG" firstAttribute="trailing" secondItem="lPM-yW-y62" secondAttribute="trailing" constant="20" id="ucq-Qw-iQn"/>
                             <constraint firstItem="PDJ-gz-bOq" firstAttribute="leading" secondItem="ri9-L0-SFP" secondAttribute="leading" constant="149" id="ySY-cJ-vWc"/>
@@ -231,7 +252,9 @@
                     <connections>
                         <outlet property="FirstPlayerLabel" destination="3xJ-o1-uu1" id="iii-ba-R2G"/>
                         <outlet property="PlayerTurnLabel" destination="PDJ-gz-bOq" id="iuG-dV-v3M"/>
+                        <outlet property="RestartGame" destination="5SJ-qR-JH2" id="u64-FI-Cdf"/>
                         <outlet property="SecondPlayerLabel" destination="Kw7-64-oHE" id="dCB-EQ-O0d"/>
+                        <outlet property="WinnerLabel" destination="Xfv-w5-Aq6" id="vBP-sw-kJz"/>
                         <outlet property="mainTitle" destination="lPM-yW-y62" id="m7w-9p-YQE"/>
                     </connections>
                 </viewController>

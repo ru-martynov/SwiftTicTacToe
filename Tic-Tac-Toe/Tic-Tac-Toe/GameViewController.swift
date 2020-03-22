@@ -11,11 +11,15 @@ import UIKit
 class GameViewController: UIViewController {
     // MARK: - All elements
     
-    @IBOutlet weak var mainTitle: UILabel!
-    @IBOutlet weak var PlayerTurnLabel: UILabel!
-    @IBOutlet weak var FirstPlayerLabel: UILabel!
-    @IBOutlet weak var SecondPlayerLabel: UILabel!
+    @IBOutlet weak var mainTitle: UILabel! // Shows game mode
+    @IBOutlet weak var PlayerTurnLabel: UILabel! // Shows whose step
+    @IBOutlet weak var FirstPlayerLabel: UILabel! // Shows 1st player
+    @IBOutlet weak var SecondPlayerLabel: UILabel! // Shows 2nd player
+    @IBOutlet weak var WinnerLabel: UILabel! // Shows Winners
+    @IBOutlet weak var RestartGame: UIButton! // Button to restart the game
     
+    
+    // MARK: - Game Matrix and Basic Functions
     var matrix: [[Int]] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] // 0 - None 1 - X 2 - O
     var whosTurn = 0 // 1 - FirstPlayer 2 - SecondPlayer
     
@@ -26,10 +30,12 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         startGame()
+        
+        RestartGame.layer.cornerRadius = 20
 
-        // Do any additional setup after loading the view.
     }
     
+    // MARK: - Start game and who will be who
     func startGame() {
         
         matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] // 0 - None 1 - X 2 - O
@@ -56,9 +62,15 @@ class GameViewController: UIViewController {
             SecondPlayerLabel.text = "2nd:❌"
             
             PlayerTurnLabel.text = "2nd!"
+            
+            if (changeButton == 1) {
+                SecondPlayerLabel.text = "Comp:❌"
+                PlayerTurnLabel.text = "Comp Turn"
+                playComputer()
+            }
         }
     }
-    // Value processing
+    // MARK: - Value processing
     func displayMatrix(matrix: [[Int]]) {
         var tempTag = 1
         for i in 0...2 {
@@ -66,12 +78,15 @@ class GameViewController: UIViewController {
                 if (matrix[i][j] == 0 ) {
                     let tempButton = self.view.viewWithTag(tempTag) as? UIButton
                     tempButton?.setBackgroundImage(nil, for: .normal)
+                    
                 } else if (matrix[i][j] == 1) { //Display X
                     let tempButton = self.view.viewWithTag(tempTag) as? UIButton
                     tempButton?.setBackgroundImage(UIImage(named: "x"), for: .normal)
+                    
                 } else if (matrix[i][j] == 2) { //Display O
                     let tempButton = self.view.viewWithTag(tempTag) as? UIButton
                     tempButton?.setBackgroundImage(UIImage(named: "o"), for: .normal)
+                    
                 } else {
                     
                 }
@@ -80,10 +95,8 @@ class GameViewController: UIViewController {
             }
         }
     }
-    
-    // MARK: - Game Script
 
-    @IBAction func buttonClickedXorO(_ sender: Any) {
+    @IBAction func buttonClickedXorO(_ sender: Any) { // Player Turns
         
         var tempObject = 0
         
@@ -91,16 +104,16 @@ class GameViewController: UIViewController {
             tempObject = firstPlayer
             PlayerTurnLabel.text = "1st!"
             
-        } else {//Player 2(O) turn
+        } else { // Player 2(O) turn
             tempObject = secondPlayer
             PlayerTurnLabel.text = "2nd!"
             
         }
-        
+        // MARK: - Matrix Sysytem
         guard let button = sender as? UIButton else {
             return
         }
-        
+        // Handling options
         switch button.tag {
         case 1:
             if (matrix[0][0] == 0) {
@@ -151,30 +164,50 @@ class GameViewController: UIViewController {
             print("Error")
         }
     }
-    
+    // MARK: - Print whose move
     func justPlayed() {
         displayMatrix(matrix: matrix)
         checkWinner()
         
         if (whosTurn == 1) {
             whosTurn = 2
-            PlayerTurnLabel.text = "2nd Win!"
+            WinnerLabel.text = "2nd Win!"
+            if (changeButton == 1) {
+                playComputer()
+            }
         } else {
             whosTurn = 1
-            PlayerTurnLabel.text = "1st Win!"
+            WinnerLabel.text = "1st Win!"
             
         }
     }
-    
+    // MARK: - Play with Computer
+    func playComputer() {
+        
+        var check = true
+        
+        repeat{ // Computer random turn
+            var randomPlaceRow = Int.random(in: 0...2)
+            var randomPlaceCol = Int.random(in: 0...2)
+            
+            if (matrix[randomPlaceRow][randomPlaceCol] == 0) {
+                matrix[randomPlaceRow][randomPlaceCol] = secondPlayer
+                check = false
+            }
+        } while (check)
+        justPlayed()
+    }
+    // MARK: - Winner verification function
     func checkWinner() {
         
         var counter = true
-        
+        // Victory options
         if ((matrix[0][0] == matrix[1][1]) && (matrix[1][1] == matrix[2][2]) && matrix[1][1] != 0) {
             declayWinner(whoWon: matrix[1][1])
             
         } else if ((matrix[2][0] == matrix[1][1]) && (matrix[1][1] == matrix[0][2]) && matrix[1][1] != 0) {
             declayWinner(whoWon: matrix[1][1])
+            
         } else {
             for i in 0...2 {
                 if ((matrix[i][0] == matrix[i][1]) && (matrix[i][1] == matrix[i][2]) && matrix[i][0] != 0) {
@@ -193,25 +226,23 @@ class GameViewController: UIViewController {
         }
         
     }
-    
+    // MARK: - Print Winner
     func declayWinner(whoWon: Int) {
         if (whoWon == firstPlayer) {
-            PlayerTurnLabel.text = "1st!" //Won first player
+            WinnerLabel.text = "1st Win!" //Won first player
         } else if (whoWon == secondPlayer) {
-            PlayerTurnLabel.text = "2nd!" //Won second player
+            if changeButton == 1 {
+                WinnerLabel.text = "Comp Win!" //Won second player
+            } else {
+                WinnerLabel.text = "2nd Win!"
+            }
         } else {
             
         }
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Restart Button
+    @IBAction func RestartButton(_ sender: Any) { // When press button
+        startGame() // Restart game
     }
-    */
-
+    
 }
