@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❌⭕️ Tic-Tac-Toe ⭕️❌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bls-b7-5cj">
-                                <rect key="frame" x="20" y="144" width="374" height="29"/>
+                                <rect key="frame" x="20" y="100" width="374" height="29"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-tG-ZnX">
-                                <rect key="frame" x="53.5" y="421" width="307" height="54"/>
+                                <rect key="frame" x="53.666666666666657" y="341" width="307" height="54"/>
                                 <color key="backgroundColor" red="0.95464247469999997" green="0.05252625793" blue="0.042956039309999999" alpha="0.39651188380281688" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
                                 <state key="normal" title="  Play with computer🧑⚔️🤖  ">
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-ny-kuo">
-                                <rect key="frame" x="72.5" y="525" width="269" height="54"/>
+                                <rect key="frame" x="72.666666666666686" y="445" width="269" height="54"/>
                                 <color key="backgroundColor" red="0.99842423199999997" green="0.6042280793" blue="0.60391771790000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
                                 <state key="normal" title="  Play with friend🧑⚔️👩  ">
@@ -71,11 +71,11 @@
             <objects>
                 <viewController id="Acq-u0-A9e" customClass="GameViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ri9-L0-SFP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJ2-tr-l5s">
-                                <rect key="frame" x="0.0" y="214" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="414"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="SCN-Am-9p5">
                                         <rect key="frame" x="38" y="31" width="336" height="371"/>
@@ -90,7 +90,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="118"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOI-SU-UF9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="118"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="118"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <state key="normal">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
@@ -100,13 +100,13 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w03-su-WVn">
-                                                                <rect key="frame" x="111.5" y="0.0" width="111" height="118"/>
+                                                                <rect key="frame" x="111.33333333333334" y="0.0" width="111.33333333333334" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="POh-nr-2Yv"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcj-qd-fRS">
-                                                                <rect key="frame" x="222.5" y="0.0" width="111.5" height="118"/>
+                                                                <rect key="frame" x="222.66666666666671" y="0.0" width="111.33333333333334" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="sOu-WP-A36"/>
                                                                 </connections>
@@ -117,19 +117,19 @@
                                                         <rect key="frame" x="0.0" y="118" width="334" height="118"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i0-iz-QTA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="118"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="A4d-gG-sLs"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG5-Um-GOj">
-                                                                <rect key="frame" x="111.5" y="0.0" width="111" height="118"/>
+                                                                <rect key="frame" x="111.33333333333334" y="0.0" width="111.33333333333334" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="bZW-wt-hQo"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-g1-AKX">
-                                                                <rect key="frame" x="222.5" y="0.0" width="111.5" height="118"/>
+                                                                <rect key="frame" x="222.66666666666671" y="0.0" width="111.33333333333334" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="sad-he-rvt"/>
                                                                 </connections>
@@ -140,19 +140,19 @@
                                                         <rect key="frame" x="0.0" y="236" width="334" height="118"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB3-SK-Xjc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="118"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="39z-03-DBd"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o01-2s-ijr">
-                                                                <rect key="frame" x="111.5" y="0.0" width="111" height="118"/>
+                                                                <rect key="frame" x="111.33333333333334" y="0.0" width="111.33333333333334" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="hu6-sZ-f8m"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URe-by-BUU">
-                                                                <rect key="frame" x="222.5" y="0.0" width="111.5" height="118"/>
+                                                                <rect key="frame" x="222.66666666666671" y="0.0" width="111.33333333333334" height="118"/>
                                                                 <connections>
                                                                     <action selector="buttonClickedXorO:" destination="Acq-u0-A9e" eventType="touchUpInside" id="WP3-SI-bew"/>
                                                                 </connections>
@@ -184,37 +184,37 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You play with Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPM-yW-y62">
-                                <rect key="frame" x="20" y="50" width="374" height="23.5"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd: ⭕️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kw7-64-oHE">
-                                <rect key="frame" x="306.5" y="83.5" width="87.5" height="29"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st: ❌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xJ-o1-uu1">
-                                <rect key="frame" x="20" y="83.5" width="79.5" height="29"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDJ-gz-bOq">
-                                <rect key="frame" x="149" y="116" width="117" height="23.5"/>
+                                <rect key="frame" x="20" y="50" width="374" height="23.333333333333329"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fight!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-w5-Aq6">
-                                <rect key="frame" x="172" y="740" width="70" height="28"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                <rect key="frame" x="120" y="323.33333333333331" width="174" height="69.666666666666686"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="60"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd: ⭕️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kw7-64-oHE">
+                                <rect key="frame" x="306.66666666666669" y="83.333333333333329" width="87.333333333333314" height="29"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st: ❌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xJ-o1-uu1">
+                                <rect key="frame" x="20" y="83.333333333333329" width="79.333333333333329" height="29"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDJ-gz-bOq">
+                                <rect key="frame" x="149" y="116" width="117" height="23.333333333333343"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SJ-qR-JH2">
-                                <rect key="frame" x="156.5" y="696" width="101" height="36"/>
+                                <rect key="frame" x="156.66666666666666" y="630" width="100.99999999999997" height="36"/>
                                 <color key="backgroundColor" red="0.0095373671501874924" green="0.9786263108253479" blue="0.41577351093292236" alpha="0.3025968309859155" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
                                 <state key="normal" title="  Restart  ">
@@ -227,19 +227,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Xfv-w5-Aq6" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="83A-3l-2dn"/>
                             <constraint firstItem="lPM-yW-y62" firstAttribute="top" secondItem="xam-XT-RUG" secondAttribute="top" constant="50" id="8If-FO-riZ"/>
                             <constraint firstItem="mJ2-tr-l5s" firstAttribute="leading" secondItem="xam-XT-RUG" secondAttribute="leading" id="EoI-1g-4BB"/>
                             <constraint firstItem="mJ2-tr-l5s" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="IGK-J2-Hdu"/>
                             <constraint firstItem="5SJ-qR-JH2" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="JXW-ry-5vn"/>
                             <constraint firstItem="mJ2-tr-l5s" firstAttribute="centerY" secondItem="ri9-L0-SFP" secondAttribute="centerY" id="Roa-y5-Zrp"/>
-                            <constraint firstItem="Xfv-w5-Aq6" firstAttribute="centerX" secondItem="ri9-L0-SFP" secondAttribute="centerX" id="Tz9-Cw-cS1"/>
-                            <constraint firstItem="xam-XT-RUG" firstAttribute="bottom" secondItem="Xfv-w5-Aq6" secondAttribute="bottom" constant="40" id="YJk-PU-EBG"/>
                             <constraint firstItem="xam-XT-RUG" firstAttribute="trailing" secondItem="mJ2-tr-l5s" secondAttribute="trailing" id="Zgk-p6-n1C"/>
+                            <constraint firstItem="Xfv-w5-Aq6" firstAttribute="centerY" secondItem="ri9-L0-SFP" secondAttribute="centerY" id="bMc-k5-Zgj"/>
                             <constraint firstItem="xam-XT-RUG" firstAttribute="trailing" secondItem="Kw7-64-oHE" secondAttribute="trailing" constant="20" id="bii-pA-FtA"/>
+                            <constraint firstItem="xam-XT-RUG" firstAttribute="bottom" secondItem="5SJ-qR-JH2" secondAttribute="bottom" constant="50" id="fUD-tB-8AQ"/>
                             <constraint firstItem="3xJ-o1-uu1" firstAttribute="top" secondItem="lPM-yW-y62" secondAttribute="bottom" constant="10" id="g7u-Hx-rd8"/>
                             <constraint firstItem="3xJ-o1-uu1" firstAttribute="leading" secondItem="xam-XT-RUG" secondAttribute="leading" constant="20" id="gPG-mQ-AWy"/>
                             <constraint firstItem="lPM-yW-y62" firstAttribute="leading" secondItem="xam-XT-RUG" secondAttribute="leading" constant="20" id="lg8-RT-znx"/>
-                            <constraint firstItem="Xfv-w5-Aq6" firstAttribute="top" secondItem="5SJ-qR-JH2" secondAttribute="bottom" constant="8" id="ntf-rj-Gxx"/>
                             <constraint firstItem="Kw7-64-oHE" firstAttribute="top" secondItem="lPM-yW-y62" secondAttribute="bottom" constant="10" id="pwd-3a-Nsh"/>
                             <constraint firstItem="xam-XT-RUG" firstAttribute="trailing" secondItem="lPM-yW-y62" secondAttribute="trailing" constant="20" id="ucq-Qw-iQn"/>
                             <constraint firstItem="PDJ-gz-bOq" firstAttribute="leading" secondItem="ri9-L0-SFP" secondAttribute="leading" constant="149" id="ySY-cJ-vWc"/>
