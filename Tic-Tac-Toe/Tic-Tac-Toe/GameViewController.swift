@@ -32,6 +32,8 @@ class GameViewController: UIViewController {
         startGame()
         
         RestartGame.layer.cornerRadius = 20
+        
+        WinnerLabel.text = ""
 
     }
     
@@ -41,6 +43,12 @@ class GameViewController: UIViewController {
         matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] // 0 - None 1 - X 2 - O
         displayMatrix(matrix: matrix)
         whosTurn = Int.random(in: 1...2)
+        
+        if (changeButton == 1) {
+            mainTitle.text = "You play with Computer"
+        } else {
+            mainTitle.text = "You play with Friend"
+        }
         
         if (whosTurn == 1) { //Player 1(X) turn
             firstPlayer = 1
@@ -171,13 +179,13 @@ class GameViewController: UIViewController {
         
         if (whosTurn == 1) {
             whosTurn = 2
-            WinnerLabel.text = "2nd Win!"
+            PlayerTurnLabel.text = "2nd!"
             if (changeButton == 1) {
                 playComputer()
             }
         } else {
             whosTurn = 1
-            WinnerLabel.text = "1st Win!"
+            PlayerTurnLabel.text = "1st!"
             
         }
     }
@@ -242,7 +250,7 @@ class GameViewController: UIViewController {
     }
     // MARK: - Restart Button
     @IBAction func RestartButton(_ sender: Any) { // When press button
+        WinnerLabel.text = ""
         startGame() // Restart game
     }
-    
 }
