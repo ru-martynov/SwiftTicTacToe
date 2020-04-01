@@ -191,7 +191,7 @@ class GameViewController: UIViewController {
     }
     // MARK: - Play with Computer
     func playComputer() {
-        
+
         var check = true
         
         repeat{ // Computer random turn

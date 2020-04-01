@@ -23,7 +23,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-tG-ZnX">
                                 <rect key="frame" x="53.666666666666657" y="341" width="307" height="54"/>
-                                <color key="backgroundColor" red="0.95464247469999997" green="0.05252625793" blue="0.042956039309999999" alpha="0.39651188380281688" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.99839252229999997" green="0.58057802920000001" blue="0.59215384719999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
                                 <state key="normal" title="  Play with computer🧑⚔️🤖  ">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -79,6 +79,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="SCN-Am-9p5">
                                         <rect key="frame" x="38" y="31" width="336" height="371"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-SE-VED">
                                         <rect key="frame" x="20" y="20" width="374" height="394"/>
@@ -160,6 +161,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                         </subviews>
                                         <constraints>
